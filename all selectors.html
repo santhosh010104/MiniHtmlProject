@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Railway Application Form</title>
+
+    <style>
+        /* Global Selector */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        body {
+            background-color: #90bee7;
+            padding: 20px;
+        }
+
+        /* Element Selector */
+        h1 {
+            color: rgb(129, 129, 241);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: white;
+            width: 400px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(245, 139, 139, 0.399);
+        }
+
+        label {
+            font-weight:inherit;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 7px;
+            margin-bottom: 25px;
+        }
+
+        /* ID Selector */
+        #submitBtn {
+            background-color: rgb(240, 128, 171);
+            color: rgb(206, 148, 148);
+            border: none;
+            cursor: pointer;
+        }
+
+        #submitBtn:hover {
+            background-color: rgb(135, 231, 236);
+        }
+
+        /* Class Selector */
+        .heading {
+            background-color: greenyellow;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .highlight {
+            border: 2px solid rgb(216, 151, 112);
+        }
+
+        /* Group Selector */
+        h1,
+        label,
+        p {
+            font-family: Verdana;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="heading">Railway Reservation Application Form</h1>
+
+    <form>
+
+        <label>Passenger Name</label>
+        <input type="text" class="highlight" placeholder="Enter your name">
+
+        <label>Age</label>
+        <input type="number" placeholder="Enter your age">
+
+        <label>Train Number</label>
+        <input type="text" class="highlight" placeholder="Train number">
+
+        <label>Journey Date</label>
+        <input type="date">
+
+        <label>Source Station</label>
+        <input type="text" placeholder="From">
+
+        <label>Destination Station</label>
+        <input type="text" placeholder="To">
+
+        <input type="submit" id="submitBtn" value="Book Ticket">
+
+        <p>Thank you for choosing Indian Railways.</p>
+
+    </form>
+
+</body>
+
+</html>
